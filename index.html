@@ -69,6 +69,29 @@ circle {
   stroke: #000;
   stroke-width: 1.5px;
 }
+		
+		<br>
+	<br>
+	<p class="p" style="line-height: 30px; font-size:25px; font-weight: bold; text-align:center;">
+		토끼에게 밥을 주세요
+	</p>
+	<div id = "myRect" style="transition: all 1s"> 
+	<img src="green.svg" style="width:125px; margin-top: 100px;">
+	</div>
+	<img class="img" src="bunny.svg" style="width: 200px; float: right; margin-top: -220px; margin-right: : 50px;">
+	
+    배고파
+	<input type="range" id = "myPicker" min="30" max="1200" 
+	 style="margin-top:100px; margin-left: 100px; width: 500px;">
+    배불러
+		
+	<div id = "rangeValue" style="margin-left: 50%">
+	</div>
+	<script>
+		myPicker.onchange = function(){
+		myRect.style.marginLeft = myPicker.value + "px";}
+		
+	</script>
 
 </main>
 </body>
